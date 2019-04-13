@@ -1,0 +1,15 @@
+language: android
+android:
+  licenses:
+    - 'android-sdk-preview-license-52d11cd2'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
+  components:
+    - build-tools-28.0.3
+    - android-28
+
+jdk:
+  - oraclejdk8
+  - oraclejdk11
+
+script: ./gradlew :modulea:compileDebugSources
